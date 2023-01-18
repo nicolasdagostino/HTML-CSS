@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaqueries</title>
+    <style>
+        main {
+            text-align: center;
+        }
+        body {margin: 0}
+        div {
+            width: 100%; /*cambiar el ancho de la caja*/
+            border: 1px solid green; /*borde de la caja*/
+            padding: 10px; /*margen interior*/
+            margin: 10px auto; /*centrar la caja*/
+            display: inline-block; /*cajas adyacentes*/
+            vertical-align: top; /*alinear las cajas por la linea superior del contenido*/
+            text-align: initial; /*alineación del texto por defecto*/
+            font-size: 1.2em; /*cambiando el tamaño de letra*/
+        }
+
+        @media only screen and (min-width: 450px) {
+            /*estas reglas de estilo se activan cuando la resolución sea superior a 450px*/
+            div {
+                width: 90%; /*cambiar el ancho de la caja*/
+                background-color: aquamarine;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+             /*estas reglas de estilo se activan cuando la resolución sea superior a 600px*/
+            div {
+                width: 40%; /*cambiar el ancho de la caja*/
+                margin:auto;
+                font-size: 1em;
+                background-color: aqua;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta asperiores excepturi consequatur voluptates numquam accusantium explicabo officia, consectetur obcaecati deserunt laborum, porro quae doloribus alias beatae quis voluptatem? Tempora, iste!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta asperiores excepturi consequatur voluptates numquam accusantium explicabo officia, consectetur obcaecati deserunt laborum, porro quae doloribus alias beatae quis voluptatem? Tempora, iste!</p>
+        </div>
+    </main>
+</body>
+</html>

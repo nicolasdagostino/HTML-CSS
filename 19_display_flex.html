@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display flex</title>
+    <style>
+        * {
+            box-sizing: border-box; /*cualquier elemento que tenga border o padding no incremente el tamaño de la caja*/
+        }
+        div.flex {
+            width: 50%;
+            height: 100px;
+            border: 1px solid grey;
+            display: flex; /*el display flex afecta a todos los items que se encuentren dentro de la caja contenedora*/
+            justify-content:space-evenly; /*alineación en el eje principal (por defecto es el horizontal)*/
+            align-items: flex-end; /*alineación en el eje secundario cuando solo hay una linea (por defecto es el vertical)*/
+            flex-wrap: wrap; /*indicar si queremos contenedor multilinea (por defecto todos los items aparecen en la misma linea)*/
+            align-content: center; /*alineación en el eje secundario (por defecto es el vertical) cuando tenemos contenedor multilinea*/
+            flex-direction: column-reverse;
+        }
+
+        div.item {
+            /*width: calc(33.33% - 2px);/*restar al ancho de las cajas los 2px del borde derecho e izquierdo*/
+            width: 33.33%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+    </div>
+</body>
+</html>

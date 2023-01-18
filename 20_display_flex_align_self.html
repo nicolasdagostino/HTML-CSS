@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display flex</title>
+    <style>
+        div.flex {
+            width: 500px;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        div.item {
+            width: 100px; height: 100px;
+            border: 1px solid grey;
+        }
+        #item2 {
+            align-self: center;
+            order:-1;
+        }
+        #item3 {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class='item' id="item1">A</div>
+        <div class='item' id="item2">B</div>
+        <div class='item' id="item3">C</div>
+    </div>
+</body>
+</html>

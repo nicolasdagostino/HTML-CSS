@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Overflow</title>
+        <meta charset="utf-8"> 
+        <style>
+            * {box-sizing: border-box;}
+            section {
+                width: 350px;
+                border: 1px solid black;
+                margin:auto;
+            }
+
+            div {
+                width: 310px;
+                max-height: 200px;
+                background-color: lightgreen;
+                margin:20px; /*margen exterior*/
+                padding: 20px; /*margen interior*/
+                border: 5px solid grey;
+                overflow: hidden; /*auto, scroll*/
+            }
+        </style>
+    </head>
+<body>
+    <section>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dicta voluptatum consectetur quisquam, aliquam, repellat qui delectus repudiandae rerum nam iste, ab id quis atque perferendis reiciendis ex doloribus nulla!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dicta voluptatum consectetur quisquam, aliquam, repellat qui delectus repudiandae rerum nam iste, ab id quis atque perferendis reiciendis ex doloribus nulla!</p>
+        </div>
+    </section>
+</body>
+</html>
