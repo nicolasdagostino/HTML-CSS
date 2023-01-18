@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS</title>
+    <style>
+        div {
+            width: 70%; /* ancho de las cajas*/
+            border: 1px solid blue; /*grosor, tipo y color del borde*/
+            padding: 10px; /*margen interior de la caja*/
+            margin: 10px auto; /* margen exterior de la caja*/
+        }
+
+        /* ESTILOS PARA COLORES*/
+        .azul {
+            /*color:blue;*/
+            color: #0000FF;
+            /*color: rgb(0, 0, 255);*/
+        }
+        .transparente {
+            color: rgba(0,0,255,0.5); /*color con transparencia (canal alfa)*/
+        }
+
+        .fondoverde {
+            background-color: rgba(0, 255, 0, 0.5); /*color de fondo*/
+            border-color: green; /*cambiar el color del borde*/
+        }
+
+        /* ESTILOS APLICABLES AL TEXTO */
+        .negrita {
+            font-weight: bold; /*texto resaltado o en negrita*/
+        }
+        .cursiva {
+            font-style: italic; /*letra cursiva*/
+        }
+        .subrayar {
+            text-decoration:line-through; /*tachar un texto (underline, overline, none)*/
+        }
+        .justificar {
+            text-align: justify; /*otras opciones: center, left, right*/
+        }
+        
+        /* ESTILOS FUENTE Y TAMAÑO DE LETRA*/
+        .arial {
+            font-family: Arial, Helvetica, sans-serif; /* orden de prioridad de la tipografia*/
+        }
+        .smallfont {
+            font-size: 0.8em; /*1em equivale a 16px*/
+        }
+        .mayusculas {
+            text-transform: uppercase;
+        }
+
+        /* ESPACIADO INTERLINEAL */
+        .espaciado {
+            line-height: 1.6em; /* espaciado entre lineas*/
+        }
+
+        /*ENLACES*/
+        a:visited {
+            color:green; /*enlace ya visitado*/
+        }
+        a {
+            cursor:help; /*cursor del enlace (por defecto: pointer)*/
+        }
+
+        a:hover {
+            color: purple; /*color cuando el cursor entra en el enlace*/
+        }
+
+        /* BORDES Y SOMBREADOS*/
+        .borde {
+            border: 4px ridge cyan;
+            border-radius: 15px;
+        }
+        .margen {
+            padding: 5px;
+        }
+        .sombratexto {
+            /*desplazamiento horizontal, vertical, blur, color*/
+            text-shadow: 2px 2px 1px grey;
+        }
+        .sombracaja {
+            /*desplazamiento horizontal, vertical, blur, color*/
+            box-shadow: 2px 2px 5px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="fondoverde">
+        <h3>Colores</h3>
+        <p><span class="azul">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Illo dolorum ipsam enim dicta ipsum, eius voluptatibus <span class="transparente"> quaerat soluta pariatur </span>asperiores esse accusantium earum eveniet quasi tempora id sunt repudiandae aperiam.</p>
+    </div>
+    <div>
+        <h3>Texto</h3>
+        <p class="justificar"><span class="subrayar">Lorem ipsum dolor</span> sit amet, consectetur adipisicing elit. Illo dolorum ipsam enim dicta ipsum, <span class="negrita">eius voluptatibus</span> quaerat soluta pariatur asperiores <span class="cursiva">esse accusantium</span> earum eveniet quasi tempora id sunt repudiandae aperiam.</p>
+    </div>
+    <div>
+        <h3>Fuente y tamaño</h3>
+        <p><span class="arial">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. <span class="smallfont">Illo dolorum ipsam</span> enim dicta ipsum, eius voluptatibus quaerat soluta pariatur asperiores esse accusantium earum eveniet quasi tempora id sunt repudiandae aperiam.</p>
+        <input type="text" class="mayusculas">
+    </div>
+    <div>
+        <h3>Espaciado</h3>
+        <p class="espaciado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorum ipsam enim dicta ipsum, eius voluptatibus quaerat soluta pariatur asperiores esse accusantium earum eveniet quasi tempora id sunt repudiandae aperiam.</p>
+    </div>
+    <div>
+        <h3>enlaces</h3>
+        <p>
+            <a href="#">Cargar la página</a>
+        </p>
+    </div>
+    <div>
+        <h3 class="sombratexto">Bordes y sombreados</h3>
+        <p class="borde margen sombracaja">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorum ipsam enim dicta ipsum, eius voluptatibus quaerat soluta pariatur asperiores esse accusantium earum eveniet quasi tempora id sunt repudiandae aperiam.</p>
+    </div>
+    <div>
+        <h3>Display none</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorum ipsam enim dicta ipsum, eius voluptatibus quaerat soluta pariatur asperiores esse accusantium earum eveniet quasi tempora id sunt repudiandae aperiam.</p>
+    </div>
+</body>
+</html>

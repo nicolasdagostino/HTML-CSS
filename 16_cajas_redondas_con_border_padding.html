@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cajas redondas</title>
+    <style>
+        * {
+            box-sizing: border-box; /*evitar que las cajas incrementen su tamaño al añadir padding o border*/
+        }
+        div#caja1 {
+            width: 300px; height: 300px; /*ancho y alta de la caja*/
+            padding:10px; /*margen interior*/
+            border: 1px solid blue; /*borde de la caja*/
+            margin-right: 10px;/*margen exterior a la derecha de la caja*/
+            border-radius: 50%; /*bordes redondeados para que la caja sea redonda*/
+            text-align: center; /*centrar el texto del párrafo situado dentro de la caja*/
+            display: inline-block;
+            vertical-align: top; /*alinear la caja con los elementos adyacentes por su borde superior*/
+            font-size: initial; /*restablecer el tamaño del texto al que tiene por defecto el navegador*/
+        }
+        p {
+           margin-top: 100px;
+        }
+
+        div#caja2 {
+            width: 300px; height: 300px;
+            border-radius:50%;
+            overflow: hidden; /*oculta el contenido que desborda la caja contenedora*/
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        img {height: 300px;}
+
+        main {
+            width: 610px; /*ancho de 600px para contener las dos cajas de 300 + 10px del margen derecho de la caja 1*/
+            background-color: aqua;
+            font-size: 0; /*parche para evitar el espacio en blanco que el navegador deja entre elementos con display inline-block. El inconveniente es que todo el texto que se encuentre dentro de esta caja tendrá font 0*/
+            margin:auto; /*centrado de la caja contenedora*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="caja1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem sequi unde ipsam sint ab hic laboriosam voluptatibus, eveniet doloremque rem, dolore nulla fugiat dicta. Pariatur eius consectetur officia quam!</p>
+        </div>
+        <div id="caja2">
+            <img src="img/img1.jpg" alt="">
+        </div>
+    </main>
+</body>
+</html>
