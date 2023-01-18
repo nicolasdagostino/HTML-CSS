@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <style>
+        div {
+            background-color: bisque;
+            text-align: center; /*centrar el contenido de la caja*/
+        }
+
+        .h100 {
+            height: 100px; /*los selectores de tipo class tienen prioridad sobre los selectores de tipo etiqueta*/
+        }
+
+        img {
+            height: 300px; /* ancho de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img/commodore_64.png" alt="micro commodore 64 8 bits" title="micro commodore 64 8 bits">
+        <img src="img/oric1.png" alt="micro oric 1 8 bits">
+        <img class="h100" src="img/alcyon_logo.png" alt="">
+    </div>
+</body>
+</html>
