@@ -1,0 +1,100 @@
+		
+main {
+	background-color: #e4f3f8;
+	width: 90%;
+	max-width:980px;
+	margin: auto;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+header {
+	height: 400px;
+	background: url("../img/fondo_grande.jpg") no-repeat;
+	background-size: contain; /*la imagen se escala para cubrir todo el fondo de la caja pero sin perder las proporciones*/
+	/*background-size: cover;*/
+	border: 3px ridge cyan;
+	box-sizing: border-box;	
+}
+
+nav {
+	background-color: cyan;
+	height: 27px; 
+	padding: 0px 5px 0px 5px;
+	box-sizing: border-box;	
+	text-align: left;
+	margin: 10px auto auto auto;
+}
+nav ul {
+	list-style: none; /*eliminar las viñetas de las opciones de la lista*/
+	margin: 0px; /*suprimir el margen inferior y superior que tienen por defecto las listas*/
+}
+nav li {
+	display: inline-block; /*para que los elementos de la lista se situen unos al lado de otros*/
+	vertical-align: top;
+} 
+nav a {
+	color: #024071;
+	text-decoration: none; /*eliminar el subrayado*/
+	font-weight: bold; /*negrita*/
+	text-align: center;
+	padding: 0px 5px;
+	line-height: 27px; /* centrar verticalmente el texto detro de la etiqueta*/
+	display: block; /*para que la etiqueta ocupe el 100% del ancho de su caja contenedora (li)*/
+}
+nav a:hover {
+	background: -moz-linear-gradient(left, #fec540 0%, #fff96d 100%); 
+	background: -webkit-linear-gradient(left, #fec540 0%, #fff96d 100%);
+	background: -o-linear-gradient(left, #fec540 0%, #fff96d 100%);
+	background: -ms-linear-gradient(left, #fec540 0%, #fff96d 100%);
+	background: linear-gradient(left, #fec540 0%, #fff96d 100%); 
+}
+
+
+section {
+	background-color: white;
+	color: black;	
+	padding: 0px 0px 10px 0px;
+	box-sizing: border-box;	
+	text-align: center;
+	margin: 10px auto auto auto;
+	border: 3px ridge cyan;
+}
+
+
+div.sections {
+	box-sizing: border-box;	
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	vertical-align: top;
+	background-color: white; 
+}
+div.introduccion {
+	box-sizing: border-box;
+	margin: auto;
+	padding: 20px 40px 0px 40px;
+	text-align: justify;
+	background-color: white; 
+}
+
+article {
+	display: inline-block;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 45%;
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+	background-color: white;
+	border: 3px ridge #004b84;
+}
+
+article img {
+	width: 50%;
+}
+
+img {
+	float: left;
+	margin: 0px 10px 10px 0px
+}

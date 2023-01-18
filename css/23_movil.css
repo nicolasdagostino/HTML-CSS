@@ -1,0 +1,35 @@
+header {
+    background-image: url('../img/fondo_pequenyo.jpg');
+    height: 250px;
+}
+
+article {
+    width: 90%;
+}
+
+article img {
+    width: 100%; /*ancho del 100% para que ocupen todo el ancho de la caja contenedora*/
+}
+
+nav ul {
+    padding: 0; /*elimnar el margen interior izquierdo que tienen por defecto las listas*/
+}
+
+nav li {
+    display: block; /*las etiquetas li se disponen unas debajo de otras*/
+    margin: 5px auto; /*margen superior e inferior de 5px y izquierdo y derecho automático*/
+    width: 90%; /*ancho de las etiquetas */
+}
+
+nav {
+    height: auto; /*el alto de la caja lo calculará el navegador en función del contenido*/
+}
+
+nav a {
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+p, span {
+    font-size: 1.2em;
+}
