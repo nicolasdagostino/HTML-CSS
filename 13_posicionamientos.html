@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamientos</title>
+    <style>
+        main {
+            width: 70%;
+            padding: 20px;
+            background-color: aqua;
+            margin:auto;
+            position: relative; /*punto de referencia para los elementos que tengan posicionamiento absoluto dentro de esta caja*/
+            height: 2000px;
+        }
+
+        img {
+            width: 80px;
+            /*position: static; la imagen aparece donde le toca*/
+            /*position: relative; top: -70px; left: 780px; la imagen aparece desplazada respecto a su ubicación original el numero de px que indiquen las propiedades top y left*/
+            position: absolute; top:10px; right: 10px; /*la imagen aparece desplazada respecto a los bordes del navegador o los bordes de la caja contenedora el numero de px que indiquen las propiedades top, left, right o bottom*/
+            /*position: sticky; top:10px el elemento queda fijo en cuanto llega a las coordenadas indicadas en top*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Posicionamiento elementos</h2>
+        <img src="img/alcyon_logo.png">
+    </main>
+</body>
+</html>

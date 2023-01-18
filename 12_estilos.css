@@ -1,0 +1,43 @@
+main {
+    width: 60%; /* ancho en % para facilitar la adaptación multidispositivo*/
+    max-width: 1600px; /* para evitar la espaguetización en dispositivos con elevada resolucuón horizontal*/
+    margin: auto; /* centrar la caja */
+    border: 1px solid orange;
+    padding: 5px; /*margen interior*/
+}
+
+header, nav, div#contenido, footer {
+    border: 1px solid blue;
+    padding: 5px; /*margen interior*/
+    margin-bottom: 10px; /*margen inferior para separar las cajas*/
+}
+
+header {
+    height: 80px;
+}
+nav {
+    height: 30px;
+}
+footer {
+    height: 120px;
+}
+section {
+    border: 1px solid red;
+    margin-bottom: 5px; /*margen inferior*/
+    padding: 5px; /*margen interior*/
+}
+section#imagen, section#descripcion {
+    height: 240px;
+}
+article {
+    width: 45%; /*ancho de las cajas*/
+    height: 180px; /*alto de las cajas*/
+    border: 1px solid grey;
+    display: inline-block; /*las cajas se situan unas al lado de otras*/
+    vertical-align: top; /*forzar a que las cajas se alineen por la linea superior y no por la linea de base del contenido*/
+    text-align: initial; /*restablecer el estilo por defecto para la alineación del contenido de cada artículo*/
+    margin: 5px 10px; /*margen exterior de 5px arriba y abajo y 10px a derecha y izquierda*/
+}
+section#articulos {
+    text-align: center; /*centrar todo el contenido de la caja articulos (los propios articulos y el contenido de éstos)*/
+}

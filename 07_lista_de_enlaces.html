@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de enlaces</title>
+    <style>
+        nav {
+            width: 50%;
+            border: 1px solid blue; /* borde de la caja */
+            padding: 10px; /* margen interior de la caja */
+        }
+
+        a {
+            color: green; /* color del texto de los enlaces */
+            text-decoration: none; /* eliminar el subrayado del enlace */
+        }
+
+        nav ul {
+            list-style-type: none; /* eliminar las viñetas de la lista */
+            text-align: center; /*centrar el contenido de la lista (las etiquetas li)*/
+            padding: 0; /* eliminar el margen interior izquierdo que tiene por defecto la etiqueta ul */
+        }
+    
+
+        nav li {
+            display: inline-block; /* cambiar el display por defecto de block a inline-block para que los elementos de la lista se situen unos al lado de otros*/
+            border: 1px solid grey; /*borde de los elementos de la lista*/
+            padding: 5px; /* margen interior de los elementos de la lista */
+            transition: 500ms; /*transición de entrada y salida para los cambios de estilos al pasar el cursor por encima de elemento*/
+        }
+
+        nav li:hover {
+            background-color: lightblue; /* añadir un color de fondo cuando el cursor pase por encima de la etiqueta li */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Enlace 1</a></li>
+            <li><a href="#">Enlace 2</a></li>
+            <li><a href="#">Enlace 3</a></li>
+            <li><a href="#">Enlace 4</a></li>
+        </ul>
+    </nav>
+    <div>
+        <ul>
+            <li>Opción 1</li>
+            <li>Opción 2</li>
+            <li>Opción 4</li>
+        </ul>
+    </div>
+</body>
+</html>

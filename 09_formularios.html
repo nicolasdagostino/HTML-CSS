@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        label {
+            width: 160px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        textarea {
+            resize: none; /*impedir que el usuario pueda modifiar el tamaño del textarea*/
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nombre">Nombre y apellidos</label>
+        <input type="text" id="nombre" required value="Arch Stanton" minlength="3" maxlength="20" autofocus>
+        <br>
+        <label>Email</label>
+        <input type="email" required placeholder="david@mail.do" maxlength="30">
+        <br>
+        <label>Teléfono</label>
+        <input type="tel" pattern="[0-9]{9}">
+        <br>
+        <label>Fecha nacimiento</label>
+        <input type="date" required>
+        <br>
+        <label>Edad</label>
+        <input type="number" min="0" max="110">
+        <br>
+        <label>H/M</label>
+        <span>Hombre</span><input type="radio" name="hm" value="H">
+        <span>Mujer</span><input type="radio" name="hm" value="M">
+        <span>No contesta</span><input type="radio" name="hm" value="N" checked>
+        <br>
+        <label>Aficiones</label>
+        <span>Cine</span><input type="checkbox" name="aficiones" value="cine">
+        <span>Lectura</span><input type="checkbox" name="aficiones" value="lectura">
+        <span>Música</span><input type="checkbox" name="aficiones" value="musica">
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <label>Comunidad Autónoma</label>
+        <select>
+            <option disabled selected>Seleccione una opción</option>
+            <option value="RM">Región de Murcia</option>
+            <option value="AN">Andalucia</option>
+            <option value="CL">Castilla y León</option>
+        </select>
+        <br>
+        <label>Ciudad</label>
+        <input type="text" list="ciudades">
+        <datalist id="ciudades">
+            <option value="Sevilla">
+            <option value="Málaga">
+            <option value="Astorga">
+            <option value="Lorca">
+        </datalist>   
+        <br> 
+        <label>Hora visita</label>
+        <input type="time">
+        <br>
+        <label>Color</label>
+        <input type="color">
+        <br>
+        <label>Comentarios</label>
+        <textarea cols="30" rows="10"></textarea>
+        <br>
+        <label></label>
+        <input type="file">
+        <hr>
+        <input type="submit" value="Alta Persona">
+        <input type="reset">
+        <input type="hidden">
+    </form>
+</body>
+</html>

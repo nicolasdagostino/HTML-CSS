@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV</title>
+    <style>
+        div {
+            border: 1px solid blue; /* borde de 1 px de grosor, tipo sólido y color azul*/
+            width: 40%;
+            margin: 10px auto; /*margen inferior y superior de 10px y centrado de elementos de tipo block cuando no ocupan el 100% de ancho de la caja contenedora*/
+            padding: 10px; /* margen interior */
+        }
+
+        .inline {
+            width: 20%;
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Sección 1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, sapiente adipisci nam temporibus facere fugiat a doloribus dolor ex illo, eveniet cum deleniti quaerat! Illo eveniet in ullam unde voluptatum.</p>
+    </div>
+    <div>
+        <h2>Sección 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, sapiente adipisci nam temporibus facere fugiat a doloribus dolor ex illo, eveniet cum deleniti quaerat! Illo eveniet in ullam unde voluptatum.</p>
+    </div>
+    <div class="inline">
+        <h3>Título</h3>
+        <p>Contenido</p>
+    </div>
+    <div class="inline">
+        <h3>Título</h3>
+        <p>Contenido</p>
+        <p>Más contenido</p>
+    </div>
+</body>
+</html>
